@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class=" menu-primary ">
+        <div class="ui grid container">
+            <div class="row">
+                <div class="eight wide column logo">
+                    <img src="Logobranca.png" alt="">
+                </div>
+                <div class="eight wide column logo">
+                    <img src="Logobranca.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Button menu -->
+                <div class="eight wide column flex-left">
+
+                    <button class="ui  button menu">MENU</button>
+
+                </div>
+                <div class="four wide column user-name">
+                    <p>Hélio Harada</p>
+                </div>
+                <div class="two wide column icon">
+                        <i class="info circle icon "></i>
+                </div>
+                <div class="two wide column icon">
+                        <i class="sign out icon "></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <main style="height: 3200px" class="ui ">
+        <div class="ui grid container">
+
+            <!--  Section FILTRO -->
+            <div class="centered row">
+                <div class=" column">
+
+                    <!-- CARD FILTRO -->
+                    <div class="box-section">
+
+
+                        <!-- TITLE -->
+                        <div class="row box-input">
+                            <div class="title-section">
+                                <h3>Fornecedor</h3>
+                            </div>
+                        </div>
+
+                        <!-- INPUT FORNECEDOR -->
+                        <div class="row box-input Fornecedor">
+                            <div class="column">
+                                <select class="ui dropdown">
+                                    <option value="">Fornecedor</option>
+                                    <option value="1">Bebidas etc...</option>
+                                    <option value="0">Alimentos etc...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- INPUT TIPO DE PEDIDO -->
+                        <div class="row box-input pedidos">
+                            <div class="ui form">
+                                <div class="grouped fields">
+                                    <label for="">Tipos de pedidos</label>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="example2" checked="checked">
+                                            <label>Faturados</label>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="example2">
+                                            <label>Realizados</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- data -->
+                        <div class="row box-input data">
+                            <div class="colunm">
+
+                                <div class="field">
+                                    <label for="mes">Mês</label><br>
+                                    <select class="ui compact selection dropdown">
+                                        <option value="">Mes</option>
+                                        <option value="1">FEV</option>
+                                        <option value="0">JAN</option>
+                                    </select>
+                                </div>
+
+                                <div class="field">
+                                    <label for="mes">Ano</label><br>
+                                    <select class="ui compact selection dropdown">
+                                        <option value="">Ano</option>
+                                        <option value="1">2020</option>
+                                        <option value="0">2021</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row btn-submit filtrar">
+                            <button class="ui  button bg-primary">FILTRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHART -->
+            <div class="centered row">
+                <div class="box-section">
+                    <div class="row ">
+                        <div class="title-section">
+                            <h3>Vendas</h3>
+                        </div>
+
+                    </div>
+                    <!-- radio input -->
+                    <div class="row box-input">
+                        <div class="ui form">
+                            <div class="grouped fields">
+
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example2" checked="checked">
+                                        <label>Faturados</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="example2">
+                                        <label>Realizados</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- chart -->
+                    <div class="row">
+                        <img width="50%" src="chart.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- card group -->
+
+            <!-- Cards -->
+            <div class="row box-section box-card bg-primary">
+                <div class="seven wide column left-card">
+                    <i class="user icon img-card"></i>
+                    <h5 class="card-number">15</h5>
+                    <h5 class="card-title">Clientes Ativos</h5>
+                </div>
+
+                <div class="seven wide right floated column right-card">
+                    <h5 class="card-text">Pontos positivos: 15</h5>
+                    <h5 class="card-text">Pontos positivos: 32</h5>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row box-section box-card bg-green">
+                <div class="seven wide column left-card">
+                    <i class="edit icon img-card"></i>
+                    <h5 class="card-number">15</h5>
+                    <h5 class="card-title">Pedidos Faturados</h5>
+                </div>
+
+                <div class="seven wide right floated column right-card">
+     
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row box-section box-card bg-green">
+                <div class="seven wide column left-card">
+                    <i class="dropbox icon img-card"></i>
+                    <h5 class="card-number">15</h5>
+                    <h5 class="card-title">Pedidos Faturados</h5>
+                </div>
+
+                <div class="seven wide right floated column right-card">
+                    <h5 class="card-text">Pontos positivos: 15</h5>
+                    <h5 class="card-text">Pontos positivos: 32</h5>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="row box-section box-card bg-red">
+                    <div class="seven wide column left-card">
+                        <i class="user icon img-card"></i>
+                        <h5 class="card-number">15</h5>
+                        <h5 class="card-title">Clientes Bloqueados</h5>
+                    </div>
+    
+                    <div class="seven wide right floated column right-card">
+                 
+                    </div>
+                </div>
+
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="ui grid footer equal width row">
+        <div class="box-icon column">
+            <i class="home icon footer-icon"></i>
+            <p class="sub-icon">Inicio</p>
+            <!-- <img src="user.svg" class="icon" alt=""> -->
+        </div>
+        <div class="box-icon column">
+            <i class="user icon footer-icon"></i>
+            <p class="sub-icon">Clientes</p>
+        </div>
+        <div class="box-icon column">
+            <i class="dollar icon footer-icon"></i>
+            <p class="sub-icon">Preço</p>
+            <!-- <img src="user.svg" class="icon" alt=""> -->
+        </div>
+        <div class="box-icon  column">
+            <i class="building outline icon footer-icon"></i>
+            <p class="sub-icon">Fornecedores</p>
+            <!-- <img src="user.svg" class="icon" alt=""> -->
+        </div>
+        <div class="box-icon column">
+            <i class="edit icon footer-icon"></i>
+            <p class="sub-icon">Pedidos</p>
+            <!-- <img src="user.svg" class="icon" alt=""> -->
+        </div>
+        <div class="box-icon column">
+            <i class="cube icon  footer-icon"></i>
+            <p class="sub-icon">Produto</p>
+            <!-- <img src="user.svg" class="icon" alt=""> -->
+        </div>
+    </footer>
+</body>
+
+</html>
