@@ -106,6 +106,10 @@ $container-pading: 0px 16px 0px 16px;
     // border: red 1px solid;
 }
 
+.box-filtro{
+    padding: 0px !important;
+}
+
 .btn-submit{
     @include center;
     padding-bottom: 16px;
@@ -128,6 +132,15 @@ $container-pading: 0px 16px 0px 16px;
 
     width: 100%;
 }
+
+
+
+.chart-radio{
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+// card
 
 .box-card{
     padding: 24px!important;
@@ -169,7 +182,7 @@ $container-pading: 0px 16px 0px 16px;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-
+        padding-right: 8px;
         h5{
             margin: 0px 0px 0px 0px !important;
             text-align: center;
@@ -181,6 +194,15 @@ $container-pading: 0px 16px 0px 16px;
             font-weight: normal;
             font-size: 16px;
             line-height: 19px;
+            text-align: center;
+        }
+
+        .card-title{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px !important;
+            margin-bottom: 8px !important;
+            line-height: 23px;
             text-align: center;
         }
 
@@ -204,6 +226,11 @@ $container-pading: 0px 16px 0px 16px;
     width: 100% !important;
     box-shadow: $box-shadow-default;
     border-radius: $border-radius;
+}
+
+.box-sync{
+    color: $primary;
+    padding: 16px 0px 16px 0px;
 }
 
 .footer{
